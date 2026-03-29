@@ -869,7 +869,7 @@ declare class PyBufferMethods {
 	 * ever performed.
 	 *
 	 * We do not support suboffsets, if the buffer requires suboffsets we will
-	 * throw an error. JavaScript nd array libraries can't handle suboffsets
+	 * throw an error. JavaScript and array libraries can't handle suboffsets
 	 * anyways. In this case, you should use the :js:meth:`~PyProxy.toJs` api or
 	 * copy the buffer to one that doesn't use suboffsets (using e.g.,
 	 * :py:func:`numpy.ascontiguousarray`).
